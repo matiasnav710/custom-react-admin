@@ -46,6 +46,8 @@ const ReviewList = () => {
                                 ? parseInt((match as any).params.id, 10)
                                 : undefined
                         }
+                        // listType="status"
+                        // listType="rating"
                     />
                 )}
             </List>
