@@ -11,8 +11,8 @@ const authProvider: AuthProvider = {
         return Promise.resolve();
     },
     checkError: () => Promise.resolve(),
-    checkAuth: () =>
-        localStorage.getItem('username') ? Promise.resolve() : Promise.reject(),
+    checkAuth: () => Promise.resolve(),
+        // localStorage.getItem('username') ? Promise.resolve() : Promise.reject(),
     getPermissions: () => Promise.reject('Unknown method'),
     getIdentity: () =>
         Promise.resolve({
